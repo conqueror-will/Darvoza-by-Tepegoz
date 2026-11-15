@@ -1,0 +1,6 @@
+# local SQLite database + WAL/SHM sidecars (runtime state, never committed)
+*.db
+*.db-wal
+*.db-shm
+__pycache__/
+*.pyc

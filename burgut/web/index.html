@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Burgut — Operations Picture</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <div class="brand">BURGUT<span>operations picture</span></div>
+  <div class="scope-note">Own assets &amp; sites only · human-in-the-loop · no autonomous action</div>
+  <button id="refresh">Refresh</button>
+</header>
+
+<section class="tiles" id="tiles"></section>
+
+<main>
+  <div class="col">
+    <h2>Sites &amp; sensors</h2>
+    <div id="map" class="map"></div>
+    <table id="sensors"><thead><tr>
+      <th>Sensor</th><th>Site</th><th>Metric</th><th>Last</th><th>Status</th>
+    </tr></thead><tbody></tbody></table>
+  </div>
+
+  <div class="col">
+    <h2>Open alerts</h2>
+    <div id="alerts" class="list"></div>
+    <h2>Tasks</h2>
+    <div id="tasks" class="list"></div>
+  </div>
+</main>
+
+<footer>
+  <span id="status">—</span>
+  <span class="muted">Burgut · sub-project of Darvoza · scoped per docs/PLAN.md</span>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
